@@ -1,4 +1,4 @@
-import { OrbitControls, Stage } from "@react-three/drei";
+import { MeshReflectorMaterial, OrbitControls, Stage } from "@react-three/drei";
 import React from "react";
 import { Table } from "./Table";
 import { useConfigurator } from "../Context/configurator";
@@ -10,11 +10,14 @@ function Experience() {
       <Stage
         intensity={1.5}
         environment={"city"}
+        
         shadows={{
           type: "accumulative",
           color: "#d9afd9",
-          colorBlend: 2,
+          colorBlend: 3,
           opacity: 2,
+          scale: 50, 
+          
         }}
         adjustCamera={2}
       >

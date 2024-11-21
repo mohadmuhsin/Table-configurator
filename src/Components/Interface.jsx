@@ -34,7 +34,7 @@ export const Interface = () => {
       p={3}
     >
       <Stack spacing={3}>
-        <Typography variant="caption">Table Configurator</Typography>
+        <Typography  variant="caption">Table Configurator</Typography>
         <Box className="glass" p={3}>
           <FormControl>
             <FormLabel>Table width</FormLabel>
@@ -65,21 +65,7 @@ export const Interface = () => {
             />
           </FormControl>
         </Box>
-        {/* <Box className="glass" p={3}>
-          <FormControl>
-            <FormLabel>Table height</FormLabel>
-            <Slider
-              sx={{
-                width: "200px",
-              }}
-              min={0}
-              max={100}
-              value={tableHeight}
-              onChange={(e) => setTableHeight(e.target.value)}
-              valueLabelDisplay="auto"
-            />
-          </FormControl>
-        </Box> */}
+        
         <Box className="glass" p={3}>
           <FormControl>
             <FormLabel>Legs Layout</FormLabel>
@@ -102,6 +88,7 @@ export const Interface = () => {
             <FormLabel>Legs Color</FormLabel>
             <RadioGroup
               value={legsColor}
+              
               onChange={(e) => setLegsColor(e.target.value)}
             >
               <FormControlLabel
